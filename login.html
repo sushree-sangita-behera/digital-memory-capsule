@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Auth UI</title>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+
+<style>
+body {
+  background: #f6f5f7;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  width: 768px;
+  height: 500px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Forms */
+.form-container {
+  width: 50%;
+  padding: 50px;
+  text-align: center;
+  transition: all 0.6s ease-in-out;
+}
+
+input {
+  background: #eee;
+  border: none;
+  padding: 10px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+  background-color: #ff4b2b;
+  color: white;
+  padding: 12px 45px;
+  cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+  background: linear-gradient(to right, #ff416c, #ff4b2b);
+  color: white;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: all 0.6s ease-in-out;
+}
+
+/* Animation classes */
+.container.active .overlay {
+  transform: translateX(-100%);
+}
+
+.container.active .signup {
+  transform: translateX(100%);
+}
+
+.container.active .login {
+  transform: translateX(-100%);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="container">
+
+  <!-- SIGN UP -->
+  <div class="form-container signup">
+    <h1>Create Account</h1>
+
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <button onclick="handleSignup()">Sign Up</button>
+  </div>
+
+  <!-- LOGIN -->
+  <div class="form-container login">
+    <h1>Sign In</h1>
+
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <button>Sign In</button>
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="overlay">
+    <h1 id="overlayTitle">Hello, Friend!</h1>
+    <p id="overlayText">Sign up to start your journey</p>
+  </div>
+
+</div>
+
+<script>
+function handleSignup() {
+  // simulate validation
+  alert("Account Created Successfully!");
+
+  // trigger animation
+  document.getElementById("container").classList.add("active");
+
+  // change overlay text
+  document.getElementById("overlayTitle").innerText = "Welcome Back!";
+  document.getElementById("overlayText").innerText = "Please login with your details";
+}
+</script>
+
+</body>
+</html>
