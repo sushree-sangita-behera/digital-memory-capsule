@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Digital Memory Capsule</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link rel="stylesheet" href="subscription.css">
+</head>
+
+<body>
+
+<div class="main">
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">💖 Digital Memory Capsule</div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">My Capsules</a>
+      <a href="#">Pricing</a>
+      <a href="#">Profile</a>
+      <button class="logout">Logout</button>
+    </div>
+  </div>
+
+  <!-- Title -->
+  <div class="title">
+    <h1>Choose the Plan That Fits Your Memory</h1>
+    <p>Unlock unlimited memories and media support with Pro.</p>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards">
+
+    <!-- Free -->
+    <div class="card free">
+      <h2>Free Plan</h2>
+      <h3>₹ 0 <span>/ month</span></h3>
+      <hr>
+      <ul>
+        <li><i class="fa fa-check"></i> 3 memory capsules</li>
+        <li><i class="fa fa-check"></i> Limited media support</li>
+        <li><i class="fa fa-check"></i> Basic reminders</li>
+      </ul>
+      <button class="btn red">Start for Free</button>
+    </div>
+
+    <!-- Pro -->
+    <div class="card pro">
+      <div class="pro-top">Pro Plan</div>
+      <h3>₹ 299 <span>/ month</span></h3>
+      <hr>
+      <ul>
+        <li><i class="fa fa-check"></i> Unlimited Capsules</li>
+        <li><i class="fa fa-check"></i> Full media support</li>
+        <li><i class="fa fa-check"></i> Advanced reminders</li>
+        <li><i class="fa fa-check"></i> Countdown & animations</li>
+      </ul>
+      <button class="btn orange" onclick="upgrade()">Upgrade Now</button>
+    </div>
+
+    <!-- Premium -->
+    <div class="card premium">
+      <h2>Premium Plan</h2>
+      <h3>₹ 499 <span>/ month</span></h3>
+      <hr>
+      <ul>
+        <li><i class="fa fa-check"></i> All Pro Features</li>
+        <li><i class="fa fa-check"></i> Priority support</li>
+        <li><i class="fa fa-check"></i> Family sharing</li>
+      </ul>
+      <button class="btn disabled">Coming Soon</button>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="links">
+      About | Contact | Terms & Privacy
+    </div>
+
+    <div class="icons">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+  </div>
+
+</div>
+
+<script src="subscription.js"></script>
+</body>
+</html>

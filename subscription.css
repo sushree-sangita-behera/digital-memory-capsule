@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #d8a3c7;
+}
+
+/* Main Container */
+.main {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #f3a6d6, #c79ac7);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #e7a6cc;
+  padding: 15px 25px;
+  border-radius: 15px;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+.nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.logout {
+  border-radius: 20px;
+  padding: 6px 18px;
+  border: 2px solid black;
+  background: transparent;
+  font-weight: 600;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.title h1 {
+  color: #0c2d57;
+}
+
+.title p {
+  color: #0c2d57;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  width: 260px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #dce6f2;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.card ul li {
+  margin: 10px 0;
+}
+
+.card i {
+  color: green;
+  margin-right: 8px;
+}
+
+/* Pro Card */
+.pro {
+  background: #cdddf0;
+}
+
+.pro-top {
+  background: linear-gradient(to right, #2f5fd0, #ff4b4b);
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+/* Premium */
+.premium {
+  background: #f0d6c9;
+}
+
+/* Buttons */
+.btn {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+}
+
+.red {
+  background: #ff5b5b;
+  color: white;
+}
+
+.orange {
+  background: #ff3b2e;
+  color: white;
+}
+
+.disabled {
+  background: #bcd;
+}
+
+/* Footer */
+.footer {
+  margin-top: 60px;
+  background: #e7a6cc;
+  padding: 20px 30px;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer text spacing */
+.links {
+  display: flex;
+  gap: 15px;
+  font-weight: 500;
+}
+
+.icons i {
+  margin-left: 15px;
+  font-size: 26px;   /* bigger */
+  cursor: pointer;
+}
